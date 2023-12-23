@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bank.css">
+    <title>Banking</title>
+</head>
+
+<body>
+
+
+    <!--Nav Bar-->
+
+    <div class="nav">
+        <div class="welcome">Log in to get started</div>
+        <div class="logo"><img src="logo.png" alt=""></div>
+        <div class="login">
+            <input type="text" name="ID" class="input user" placeholder="USER">
+            <input type="text" name="PIN" class="input pswrd" maxlength="4" placeholder="PIN">
+            <sapn class="btnlogin">&rarr;</sapn>
+        </div>
+    </div>
+
+
+
+    <!--main content-->
+
+    <div class="app">
+
+        <div class="bal">
+            <h3>Current balance</h3>
+            <span class="discription">As of 12/08/2022 11:52</span>
+        </div>
+        <div>
+            <h2 class="cbal "><span>₹ </span>00,00,000</h2>
+        </div>
+        <div class="main">
+            <div class="movement ">
+                <div class="deposite transition">
+                    <span class="Deposite clr">&downarrow; Deposite</span> <span class="date">TODAY</span> <span
+                        class="money">₹ 500</span>
+                </div>
+                <div class="withdrawl transition">
+                    <span class="Withdrawl clr">&uparrow; Withdrawl</span> <span class="date">TODAY</span> <span
+                        class="money">₹ 500</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="tran">
+            <div class="tmoney border bgclr1">
+                <h3>Transfer money</h3>
+                <div class="tm">
+                    <div class="tid">
+                        <input type="text" class="blur transfer_id">
+                        <p>Tranfer ID</p>
+                    </div>
+                    <div class="tamt">
+                        <input type="text" class="blur transfer_amt">
+                        <p>Amount</p>
+                    </div>
+                    <div>
+                        <button class="proced transfer_btn">&rarr;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="reqloan border bgclr2">
+                <h3>Request loan</h3>
+                <div class="tm">
+                    <div class="tamt">
+                        <input type="text" class="blur reqamt">
+                        <p>Amount</p>
+                    </div>
+                    <div>
+                        <button class="proced reqbtn">&rarr;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="closeacc border bgclr3">
+                <h3>Close account</h3>
+                <div class="tm">
+                    <div class="tid">
+                        <input type="text" class="blur closeid">
+                        <p>Tranfer ID</p>
+                    </div>
+                    <div class="tamt">
+                        <input type="password" class="blur closepswrd">
+                        <p>Pin</p>
+                    </div>
+                    <div>
+                        <button class="proced close">&rarr;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="summry ">
+            <span class="IN">IN</span><span class="in">₹ 56,458</span>
+            <span class="IN">OUT</span><span class="out">₹ 12,548</span>
+            <span class="IN">INTREST</span><span class="int">₹ 1,562</span>
+            <button class="IN proced sort">SORT⇅</button>
+        </div>
+        <div class="logout1">You will be logout in <span class="logout">02:45</span></div>
+    </div>
+        <!--Account login details-->
+
+        <div class="details">
+            <p>user js : pin : 1111</p>
+            <p>user jd : pin : 2222</p>
+            <p>user stw : pin : 3333</p>
+            <p>user ss : pin : 4444</p>
+            </div>
+
+
+    <script src="bank.js"></script>
+</body>
+
+</html>
